@@ -1,4 +1,34 @@
 SignsOfHope::Application.routes.draw do
+  root to: "welcome#index"
+
+  get "welcome/about"
+
+  get "welcome/programs"
+
+  get "welcome/events"
+
+  get "welcome/sponsors"
+
+  get "welcome/how"
+
+  get "welcome/contact"
+
+  get "welcome/breakfast"
+
+  get "welcome/family"
+
+  get "welcome/classroom"
+
+  get "welcome/school"
+
+  get "welcome/gift"
+
+  get "welcome/bicycle"
+
+  get "welcome/sign"
+
+  get "welcome/eye"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+
+ @import "compass";
+ @import "susy";
+
+body {
+ 	background: green;
+ }
+
+h1 {
+	color: red;
+}
+
+p {
+	color: white;
+}

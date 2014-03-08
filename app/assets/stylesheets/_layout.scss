@@ -1,11 +1,67 @@
+@import "variables";
+@import "compass";
+@import "susy";
+
+// Susy setup
+
+$total-columns       :       12;
+$column-width        :       4em;
+$gutter-width        :       1em;
+$grid-padding        :       $gutter-width;
+
+
+$small               :       30em;
+$medium              :       47em;
+$large               :       75em;
+
+//Content
+.layout {
+	@include container;
+	padding: 1%;
+
+	.boardmembers {
+		@include at-breakpoint($medium) {
+			@include span-columns(3,12);
+
+			.members {
+
+			}
+		}
+	}
+
+	.biography {
+		@include at-breakpoint($medium) {
+			@include span-columns(9 omega,12);
+
+			h3 {
+				margin-top: 0px;
+			}
+		}
+	}
+}
+
 ////////////////////////////////////
 //Styling for mobile first layout//
 //////////////////////////////////
 
+body {
+	background: $hopeYellow;
+}
+
+h1 {
+	color: $hopeBlue;
+}
+
+p {
+		font-size: 18px;
+		line-height: normal;
+		text-align: justify;
+	} // styling for p tags for mobile first layout
+
 .navigation {
 
 	font-size: 20px;
-	margin: 0px;
+	padding: 5px;
 
 	ul {
 		padding: 0px;
@@ -15,6 +71,7 @@
  	li {
  		display: inline-block;
  		margin-bottom: 10px;
+ 		padding: 2px;
  	} // styling for li mobile first navigation layout
  } // End of navigation styling for mobile first layout
 
@@ -34,29 +91,22 @@
 		text-align: center;
 		margin-top: 20px;
 		padding: 0px;
-	} // styling for h2 tags for mobile first layout
-
-	p {
-		font-size: 18px;
-		line-height: normal;
-		text-align: justify;
-		padding-left: 10px;
-		padding-right: 10px;
-		color: blue;
-	} // styling for p tags for mobile first layout
+		color: $hopeBlue;
+	} // styling for h2 tags for mobile first layout on home page
 }
 
 .socialmediaicons {
 
-	background: green;
+	background: $hopeGreen;
 
 	li {
-		border: 2px solid white;
 		display: inline-block;
 		margin: 0px;
 	}
 
 	img {
-		height: 50px;
+		@include border-radius(50%);
+		height: 30px;
+		border: 2px solid white;
 	}
 }

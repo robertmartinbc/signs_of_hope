@@ -22,19 +22,32 @@ $large               :       75em;
 	.boardmembers {
 		@include at-breakpoint($medium) {
 			@include span-columns(3,12);
+		}
+	}
 
-			.members {
+	.members {
 
-			}
+		img {
+			@include border-radius(10px);
+			width: 180px;
+			height: 240px;
 		}
 	}
 
 	.biography {
 		@include at-breakpoint($medium) {
 			@include span-columns(9 omega,12);
+			@include border-radius(10px);
+			background: lighten($hopeGreen, 45);
+			padding: 10px;
 
 			h3 {
 				margin-top: 0px;
+				color: $hopeBlue;
+			}
+
+			p {
+				font-size: 20px;
 			}
 		}
 	}
@@ -93,6 +106,32 @@ p {
 		padding: 0px;
 		color: $hopeBlue;
 	} // styling for h2 tags for mobile first layout on home page
+
+	p {
+		@include border-radius(10px);
+			background: lighten($hopeGreen, 45);
+			padding: 10px;
+	}
+}
+
+.board {
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.biography {
+
+	h3 {
+		color: $hopeBlue;
+	}
+
+	p {
+		@include border-radius(10px);
+			background: lighten($hopeGreen, 45);
+			padding: 10px;
+	}
 }
 
 .socialmediaicons {

@@ -1,0 +1,63 @@
+////////////////////////////////////
+//Styling for mobile first layout//
+//////////////////////////////////
+
+.navigation {
+
+	font-size: 20px;
+	margin: 0px;
+
+	ul {
+		padding: 0px;
+		margin: 0px;
+	} // styling for ul mobile first navigation layout
+
+ 	li {
+ 		display: inline-block;
+ 		margin-bottom: 10px;
+ 	} // styling for li mobile first navigation layout
+ } // End of navigation styling for mobile first layout
+
+.branding {
+
+	img {
+		width: 100%;
+		margin: 0px;
+		//height: auto;
+	} /* styling for image mobile first layout */
+} // End of branding styling
+
+.statements {
+
+	h1 {
+		font-size: 24px;
+		text-align: center;
+		margin-top: 20px;
+		padding: 0px;
+	} // styling for h2 tags for mobile first layout
+
+	p {
+		font-size: 18px;
+		line-height: normal;
+		text-align: justify;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: blue;
+	} // styling for p tags for mobile first layout
+}
+
+.socialmediaicons {
+
+	background: green;
+	padding: 5px;
+
+	li {
+		border: 2px solid white;
+		display: inline-block;
+		margin: 0px;
+	}
+
+	img {
+		height: 50px;
+	}
+}

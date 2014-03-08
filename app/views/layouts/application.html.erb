@@ -10,19 +10,35 @@
   <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-	<ul>
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About Us", welcome_about_path %></li>
-    <li><%= link_to "Programs", welcome_programs_path %></li>
-    <li><%= link_to "Events", welcome_events_path %></li>
-    <li><%= link_to "Sponsors", welcome_sponsors_path %></li>
-    <li><%= link_to "How You Can Help", welcome_how_path %></li>
-    <li><%= link_to "Contact Us", welcome_contact_path %></li>
-   </ul>
-
-<%= yield %>
-
+  <header>
+    <div class="navigation">
+      <section class="layout">
+        <ul class="nav">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "About Us", welcome_about_path %></li>
+          <li><%= link_to "Programs", welcome_programs_path %></li>
+          <li><%= link_to "Events", welcome_events_path %></li>
+          <li><%= link_to "Sponsors", welcome_sponsors_path %></li>
+          <li><%= link_to "How You Can Help", welcome_how_path %></li>
+          <li><%= link_to "Contact Us", welcome_contact_path %></li>
+        </ul>
+      </section>
+    </div>
+  </header>
+  <%= yield %>
+  <footer>
+    <section class="layout">
+      <div class="socialmediaicons"><span class="title"></span>
+        <ul>
+          <li><a href="http://twitter.com"><%= image_tag("twitter.png") %></a></li>
+          <li><a href="http://facebook.com"><%= image_tag("facebook.png") %></a></li>
+          <li><a href="http://linkedin.com"><%= image_tag("linkedin.png") %></a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>

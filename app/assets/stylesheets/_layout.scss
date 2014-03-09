@@ -114,6 +114,7 @@ p {
 
 	p {
 		@include border-radius(10px);
+			border: 1px solid $hopeGreen;
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
 	}
@@ -142,6 +143,8 @@ p {
 	}
 
 .biography {
+	@include border-radius(10px);
+	border: 1px solid $hopeGreen;
 
 	h3 {
 		@include border-radius(10px);
@@ -198,6 +201,7 @@ p {
 
 	p {
 		@include border-radius(10px);
+			border: 1px solid $hopeGreen;
 			background: lighten($hopeYellow, 10);
 			font-size: 20px;
 			padding: 10px;
@@ -228,6 +232,7 @@ p {
 
 	p {
 		@include border-radius(10px);
+			border: 1px solid $hopeGreen;
 			background: lighten($hopeYellow, 10);
 			color: $hopeBlue;
 			font-size: 20px;
@@ -237,6 +242,9 @@ p {
 }
 
 .page-text {
+	@include border-radius(10px);
+	border: 1px solid $hopeGreen;
+	background: lighten($hopeYellow, 10);
 
 	p {
 		@include border-radius(10px);

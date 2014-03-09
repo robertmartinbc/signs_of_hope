@@ -73,6 +73,7 @@ p {
 		font-size: 18px;
 		line-height: normal;
 		text-align: justify;
+		color: $hopeGreen;
 	} // styling for p tags for mobile first layout
 
 .navigation {
@@ -155,6 +156,7 @@ p {
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
 			margin: 0px;
+			color: $hopeGreen;
 	}
 }
 
@@ -200,6 +202,7 @@ p {
 			font-size: 18px;
 			padding: 10px;
 			margin: 0px;
+			color: $hopeGreen;
 	}
 }
 
@@ -226,6 +229,7 @@ p {
 	p {
 		@include border-radius(10px);
 			background: lighten($hopeYellow, 10);
+			color: $hopeGreen;
 			font-size: 18px;
 			padding: 10px;
 			margin: 0px;

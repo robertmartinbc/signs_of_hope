@@ -29,14 +29,14 @@ $large               :       75em;
 
 		img {
 			@include border-radius(10px);
-			width: 200px;
-			height: 250px;
+			width: 150px;
+			height: 200px;
 		}
 	}
 
 	.biography {
 		@include at-breakpoint($medium) {
-			@include span-columns(8 omega,12);
+			@include span-columns(9 omega,12);
 			@include border-radius(10px);
 			background: lighten($hopeYellow, 13);
 			padding: 10px;

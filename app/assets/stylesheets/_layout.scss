@@ -173,3 +173,61 @@ p {
 		border: 2px solid white;
 	}
 }
+
+.easter-event-title {
+
+	h3 {
+		color: $hopeBlue;
+		margin-top: 0px;
+		text-align: center;
+	}
+}
+
+.easter-poster {
+
+	img {
+		@include border-radius(10px);
+		width: 100%;
+		height: 600px;;
+	}
+}
+
+.easter-poster-text {
+
+	p {
+		@include border-radius(10px);
+			background: lighten($hopeYellow, 10);
+			font-size: 18px;
+			padding: 10px;
+			margin: 0px;
+	}
+}
+
+.race-event-title {
+
+	h3 {
+		color: $hopeBlue;
+		margin-top: 10px;
+		text-align: center;
+	}
+}
+
+.race-poster {
+
+	img {
+		@include border-radius(10px);
+		width: 100%;
+		height: 600px;;
+	}
+}
+
+.race-poster-text {
+
+	p {
+		@include border-radius(10px);
+			background: lighten($hopeYellow, 10);
+			font-size: 18px;
+			padding: 10px;
+			margin: 0px;
+	}
+}

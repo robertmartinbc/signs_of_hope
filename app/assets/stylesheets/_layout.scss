@@ -66,14 +66,14 @@ body {
 }
 
 h1 {
-	color: $hopeBlue;
+	color: $hopeGreen;
 }
 
 p {
-		font-size: 18px;
+		font-size: 20px;
 		line-height: normal;
 		text-align: justify;
-		color: $hopeGreen;
+		color: $hopeBlue;
 	} // styling for p tags for mobile first layout
 
 .navigation {
@@ -109,7 +109,7 @@ p {
 		text-align: center;
 		margin-top: 20px;
 		padding: 0px;
-		color: $hopeBlue;
+		color: $hopeGreen;
 	} // styling for h2 tags for mobile first layout on home page
 
 	p {
@@ -145,7 +145,7 @@ p {
 
 	h3 {
 		@include border-radius(10px);
-		color: $hopeBlue;
+		color: $hopeGreen;
 		margin: 0px;
 		background: lighten($hopeYellow, 10);
 
@@ -156,7 +156,7 @@ p {
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
 			margin: 0px;
-			color: $hopeGreen;
+			color: $hopeBlue;
 	}
 }
 
@@ -179,7 +179,7 @@ p {
 .easter-event-title {
 
 	h3 {
-		color: $hopeBlue;
+		color: $hopeGreen;
 		margin-top: 0px;
 		text-align: center;
 	}
@@ -199,17 +199,17 @@ p {
 	p {
 		@include border-radius(10px);
 			background: lighten($hopeYellow, 10);
-			font-size: 18px;
+			font-size: 20px;
 			padding: 10px;
 			margin: 0px;
-			color: $hopeGreen;
+			color: $hopeBlue;
 	}
 }
 
 .race-event-title {
 
 	h3 {
-		color: $hopeBlue;
+		color: $hopeGreen;
 		margin-top: 10px;
 		text-align: center;
 	}
@@ -229,8 +229,20 @@ p {
 	p {
 		@include border-radius(10px);
 			background: lighten($hopeYellow, 10);
-			color: $hopeGreen;
-			font-size: 18px;
+			color: $hopeBlue;
+			font-size: 20px;
+			padding: 10px;
+			margin: 0px;
+	}
+}
+
+.page-text {
+
+	p {
+		@include border-radius(10px);
+			background: lighten($hopeYellow, 10);
+			color: $hopeBlue;
+			font-size: 20px;
 			padding: 10px;
 			margin: 0px;
 	}

@@ -220,6 +220,7 @@ p {
 
 .socialmediaicons {
 	@include container;
+	padding: 0px;
 
 	p {
 		margin: 0px;
@@ -239,8 +240,8 @@ p {
 
 	img {
 		@include border-radius(10px);
-		height: 50px;
-		width: 50px;
+		height: 30px;
+		width: 30px;
 		margin-left: 10px;
 	}
 }
@@ -248,10 +249,48 @@ p {
 .donate {
 
 	img {
-		height: 50px;
-		width: 150px !important;
+		height: 30px;
+		width: 125px !important;
+	}
+} /* This sectio for movbile first styling of social media icons */
+
+.socialmediaicons {
+	@include at-breakpoint($medium) {
+
+	p {
+		margin: 0px;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	li {
+		float: right;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 40px;
+		width: 40px;
+		margin-left: 10px;
+		}
 	}
 }
+
+.donate {
+	@include at-breakpoint($medium) {
+
+	img {
+		height: 40px;
+		width: 150px !important;
+		}
+	}
+} /* This for styling of donate button mobile first */
 
 .easter-event-title {
 

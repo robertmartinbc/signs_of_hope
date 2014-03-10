@@ -1,81 +1,222 @@
-/*
-Syntax error: Undefined variable: "$hopeGreen".
-        on line 3 of /Users/robertmartin/code/signs-of-hope/app/assets/stylesheets/slimmenu.css.scss
+/* line 1, ../../app/assets/stylesheets/slimmenu.css.scss */
+.menu-collapser {
+  position: relative;
+  border-radius: 4px;
+  background-color: #acdab1;
+  color: #0195DD;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-1: /Users/robertmartin/code/signs-of-hope/app/assets/stylesheets/slimmenu.css.scss
+/* THis controls Menu text and positioning for mibile first nav bar */
+/* line 15, ../../app/assets/stylesheets/slimmenu.css.scss */
+.collapse-button {
+  position: absolute;
+  right: 6px;
+  top: 25px;
+  width: 40px;
+  background-color: #0E0E0E;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #FFFFFF;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+  padding: 7px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-Backtrace:
-/Users/robertmartin/code/signs-of-hope/app/assets/stylesheets/slimmenu.css.scss:3
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:31:in `create'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:26:in `block in created'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `each'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `created'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:17:in `refresh'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `load'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `<main>'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/bin/ruby_executable_hooks:15:in `eval'
-/Users/robertmartin/.rvm/gems/ruby-2.0.0-p247/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$hopeGreen\".\A         on line 3 of /Users/robertmartin/code/signs-of-hope/app/assets/stylesheets/slimmenu.css.scss\A \A 1: /Users/robertmartin/code/signs-of-hope/app/assets/stylesheets/slimmenu.css.scss"; }
+/* This controls the navbar button */
+/* line 45, ../../app/assets/stylesheets/slimmenu.css.scss */
+.collapse-button:hover, .collapse-button:focus {
+  background-image: none;
+  border-radius: 4px;
+  background-color: #0195DD;
+  color: #0195DD;
+}
+
+/* This controls the hover state of the navbar buttton */
+/* line 52, ../../app/assets/stylesheets/slimmenu.css.scss */
+.collapse-button .icon-bar {
+  background-color: #ECFFA6;
+  border-radius: 1px 1px 1px 1px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  height: 2px;
+  width: 18px;
+  margin: 2px 0;
+}
+
+/* This controls the color for the navbar horizontal lines */
+/* line 62, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu {
+  list-style-type: none;
+  margin-top: 0px;
+  padding: 10;
+  width: 100%;
+}
+
+/* This controls the positioning of the ul */
+/* line 69, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li {
+  position: relative;
+  display: inline-block;
+  background-color: #ECFFA6;
+  margin: 0px;
+}
+
+/* This controld the spacing between list items */
+/* line 76, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu > li {
+  margin-right: -5px;
+  border-bottom: 0px solid #999999;
+}
+
+/* line 77, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu > li:first-child {
+  border-left: 0;
+}
+
+/* line 78, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu > li:last-child {
+  margin-right: 0;
+}
+
+/* line 79, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li a {
+  display: block;
+  color: #0195DD;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+}
+
+/* This controls the text color for the nav bar drop down links */
+/* line 93, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li a:hover {
+  border-radius: 4px;
+  background-color: #acdab1;
+  text-decoration: none;
+}
+
+/* This controls the hover state of the links */
+/* line 99, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li .sub-collapser {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  text-align: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* This controls positioning and sizing of the caret */
+/* line 111, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li .sub-collapser:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+/* This also controls the caret state */
+/* line 119, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li .sub-collapser > i {
+  color: #0195DD;
+  font-size: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* This controls the color of the caret */
+/* line 126, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li ul {
+  margin: 0;
+  list-style-type: none;
+  width: 350px;
+}
+
+/* line 131, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li ul li {
+  background-color: #acdab1;
+  width: 300px;
+  border-radius: 4px;
+}
+
+/* width of dropdown menu */
+/* line 132, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li > ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  z-index: 999;
+  width: 350px;
+}
+
+/* This controls the background color of the sub menu */
+/* line 141, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu li > ul > li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 350px;
+}
+
+/* This controls the uo within the sub menu */
+/* line 149, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu.collapsed li {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 157, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu.collapsed li a {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 165, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu.collapsed li .sub-collapser {
+  height: 40px;
+}
+
+/* line 168, ../../app/assets/stylesheets/slimmenu.css.scss */
+ul.slimmenu.collapsed li > ul {
+  display: none;
+  position: static;
+}

@@ -105,7 +105,7 @@ $large               :       75em;
 	img {
 		@include border-radius(10px);
 		height: 40px;
-		width: 100px;
+		width: 75px;
 	}
 }
 
@@ -272,17 +272,17 @@ p {
 
 	img {
 		@include border-radius(10px);
-		height: 30px;
-		width: 30px;
-		margin-left: 10px;
+		height: 20px;
+		width: 20px;
+		margin-left: 5px;
 	}
 }
 
 .donate {
 
 	img {
-		height: 30px;
-		width: 125px !important;
+		height: 20px;
+		width: 50px !important;
 	}
 } /* This sectio for movbile first styling of social media icons */
 
@@ -338,10 +338,21 @@ p {
 .difference {
 	h3 {
 		color: $hopeYellow;
-		font-size: 20px;
-		margin-right: 150px;
+		font-size: 6px;
+		margin-right: 100px;
 	}
 }
+
+.difference {
+	@include at-breakpoint($medium) {
+	h3 {
+		color: $hopeYellow;
+		font-size: 20px;
+		margin-right: 150px;
+		}
+	}
+}
+
 
 .easter-poster {
 

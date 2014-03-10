@@ -16,9 +16,10 @@ $large               :       75em;
 
 //Content
 
-slimmenu {
+.slimmenu {
 	@include container;
 }
+
 .navigation-layout {
 	@include container;
 	padding: 0px;
@@ -115,10 +116,13 @@ p {
  } // End of navigation styling for mobile first layout
 
 .branding {
+	padding: 0px;
 
 	img {
 		width: 100%;
 		margin: 0px;
+		height: auto;
+		padding: 0px;
 		//height: auto;
 	} /* styling for image mobile first layout */
 } // End of branding styling

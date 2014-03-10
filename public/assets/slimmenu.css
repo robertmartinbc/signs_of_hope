@@ -68,10 +68,10 @@
 /* line 62, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu {
   list-style-type: none;
-  margin-top: 0px;
+  margin: 0px;
   padding: 10;
   width: 100%;
-  margin-left: -60px;
+  margin-left: -40px;
   margin-right: 0px;
 }
 
@@ -81,7 +81,7 @@ ul.slimmenu li {
   position: relative;
   display: inline-block;
   background-color: #ECFFA6;
-  margin: 0px;
+  margin: 1px;
 }
 
 /* This controld the spacing between list items */
@@ -163,7 +163,7 @@ ul.slimmenu li .sub-collapser > i {
 ul.slimmenu li ul {
   margin: 0;
   list-style-type: none;
-  width: 350px;
+  width: 300px;
 }
 
 /* line 134, ../../app/assets/stylesheets/slimmenu.css.scss */
@@ -181,7 +181,7 @@ ul.slimmenu li > ul {
   left: 20px;
   top: 45px;
   z-index: 999;
-  width: 350px;
+  width: 300px;
 }
 
 /* This controls the background color of the sub menu */
@@ -191,7 +191,7 @@ ul.slimmenu li > ul > li ul {
   position: absolute;
   top: 0;
   z-index: 999;
-  width: 350px;
+  width: 300px;
 }
 
 /* This controls the uo within the sub menu */

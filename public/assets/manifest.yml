@@ -195,11 +195,13 @@ uniform_4.jpg: uniform_4-184a71d9a6bd95ee7282718eb7535173.jpg
 uniform_4/index.jpg: uniform_4-184a71d9a6bd95ee7282718eb7535173.jpg
 wordpress.png: wordpress-848cd693a1fe9d82a1e23e497e1c028a.png
 wordpress/index.png: wordpress-848cd693a1fe9d82a1e23e497e1c028a.png
+youtube.jpeg: youtube-e7cb0391675e0952db4a36b119554da6.jpeg
+youtube/index.jpeg: youtube-e7cb0391675e0952db4a36b119554da6.jpeg
 youtube.png: youtube-b1f2bc5fb42643bac096d3c0e8372661.png
 youtube/index.png: youtube-b1f2bc5fb42643bac096d3c0e8372661.png
 application.js: application-5ebbbf7883f2a5e1558b036a311247e6.js
 application/index.js: application-5ebbbf7883f2a5e1558b036a311247e6.js
-application.css: application-8af2f7d9e0d21de6e1856bbc336ab97a.css
-application/index.css: application-8af2f7d9e0d21de6e1856bbc336ab97a.css
+application.css: application-2f33b0de9df93e6e6f4dffc9029c99bb.css
+application/index.css: application-2f33b0de9df93e6e6f4dffc9029c99bb.css
 jquery.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map
 jquery/index.min.map: jquery.min-388372ef65cc311f6a3df4a6ceac8d22.map

@@ -96,6 +96,37 @@ $large               :       75em;
 	h1 {
 		margin: 0px;
 	}
+
+	a {
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 40px;
+		width: 100px;
+	}
+}
+
+.page-title {
+	@include at-breakpoint($medium) {
+
+	h1 {
+		margin: 0px;
+	}
+
+	a {
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 60px;
+		width: 150px;
+		}
+	}
 }
 
 ////////////////////////////////////
@@ -220,7 +251,8 @@ p {
 
 .socialmediaicons {
 	@include container;
-	padding: 0px;
+	background: $hopeGreen;
+		padding: 10px;
 
 	p {
 		margin: 0px;
@@ -257,6 +289,8 @@ p {
 .socialmediaicons {
 	@include at-breakpoint($medium) {
 
+		background: $hopeGreen;
+		padding: 10px;
 	p {
 		margin: 0px;
 	}
@@ -275,8 +309,8 @@ p {
 
 	img {
 		@include border-radius(10px);
-		height: 40px;
-		width: 40px;
+		height: 60px;
+		width: 60px;
 		margin-left: 10px;
 		}
 	}
@@ -286,7 +320,7 @@ p {
 	@include at-breakpoint($medium) {
 
 	img {
-		height: 40px;
+		height: 60px;
 		width: 150px !important;
 		}
 	}
@@ -298,6 +332,14 @@ p {
 		color: $hopeGreen;
 		margin: 0px;
 		text-align: center;
+	}
+}
+
+.difference {
+	h3 {
+		color: $hopeYellow;
+		font-size: 20px;
+		margin-right: 150px;
 	}
 }
 

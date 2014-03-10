@@ -169,12 +169,14 @@ p {
 .biography {
 	@include border-radius(10px);
 	border: 1px solid $hopeGreen;
+	margin-bottom: 20px;
 
 	h3 {
 		@include border-radius(10px);
 		color: $hopeGreen;
 		margin: 0px;
 		background: lighten($hopeYellow, 10);
+		padding: 10px;
 
 	}
 

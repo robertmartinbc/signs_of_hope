@@ -272,7 +272,7 @@ p {
 
 	img {
 		@include border-radius(10px);
-		height: 350px;
+		height: 35px;
 		width: 35px;
 		margin-left: 5px;
 	}
@@ -281,8 +281,8 @@ p {
 .donate {
 
 	img {
-		height: 35x;
-		width: 90px !important;
+		height: 35px;
+		width: 100px !important;
 	}
 } /* This sectio for movbile first styling of social media icons */
 
@@ -338,7 +338,7 @@ p {
 .difference {
 	h3 {
 		color: $hopeYellow;
-		font-size: 14px;
+		font-size: 16px;
 		margin-right: 10px;
 	}
 }

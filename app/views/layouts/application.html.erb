@@ -27,9 +27,8 @@
 </script>
 </head>
 <body>
-  <header>
+  <header class="navigation-layout">
     <div class="navigation">
-      <section class="layout">
         <ul class="nav">
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About Us", welcome_about_path %></li>
@@ -39,7 +38,6 @@
           <li><%= link_to "How You Can Help", welcome_how_path %></li>
           <li><%= link_to "Contact Us", welcome_contact_path %></li>
         </ul>
-      </section>
     </div>
   </header>
   <%= yield %>

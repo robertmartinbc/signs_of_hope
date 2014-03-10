@@ -15,6 +15,23 @@ $medium              :       47em;
 $large               :       75em;
 
 //Content
+
+.navigation-layout {
+	@include container;
+	padding: 0px;
+}
+
+.program-page-layout  {
+	@include container;
+		padding: 0px;
+
+	.page-text {
+		@include at-breakpoint($medium) {
+			@include span-columns(9,12);
+		}
+	}
+}
+
 .layout {
 	@include container;
 	padding: 1%;
@@ -77,6 +94,7 @@ p {
 	} // styling for p tags for mobile first layout
 
 .navigation {
+	@include container;
 
 	font-size: 20px;
 	padding: 5px;
@@ -112,8 +130,14 @@ p {
 		color: $hopeGreen;
 	} // styling for h2 tags for mobile first layout on home page
 
-	p {
+	ul {
+		padding: 0px;
+	}
+
+
+	li {
 		@include border-radius(10px);
+			display: block;
 			border: 1px solid $hopeGreen;
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
@@ -242,16 +266,12 @@ p {
 }
 
 .page-text {
-	@include border-radius(10px);
-	border: 1px solid $hopeGreen;
-	background: lighten($hopeYellow, 10);
 
 	p {
 		@include border-radius(10px);
+			border: 1px solid $hopeGreen;
 			background: lighten($hopeYellow, 10);
-			color: $hopeBlue;
-			font-size: 20px;
-			padding: 10px;
+			padding: 5px;
 			margin: 0px;
 	}
 }

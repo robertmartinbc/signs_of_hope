@@ -135,7 +135,7 @@ ul.slimmenu li ul li { background-color: lighten(#4aa353, 30); width: 300px; bor
 ul.slimmenu li > ul {
     display: none;
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 45px;
     z-index: 999;
     width: 350px;

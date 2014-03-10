@@ -18,6 +18,7 @@ $large               :       75em;
 
 .slimmenu {
 	@include container;
+	padding: 0px;
 }
 
 .navigation-layout {

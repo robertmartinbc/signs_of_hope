@@ -10,7 +10,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box
-} /* THis controls Menu text and positioning for mibile first nav bar */
+} /* THis controls Menu text and positioning for mobile first nav bar */
 
 .collapse-button {
     position: absolute;
@@ -64,7 +64,7 @@ ul.slimmenu {
     margin: 0px;
     padding: 10;
     width: 100%;
-    margin-left: -40px;
+    margin-left: -20px;
     margin-right: 0px;
 } /* This controls the positioning of the ul */
 
@@ -72,7 +72,7 @@ ul.slimmenu li {
     position: relative;
     display: inline-block;
     background-color: #ECFFA6;
-    margin: 1px;
+    margin: 0px;
 } /* This controld the spacing between list items */
 
 ul.slimmenu > li { margin-right: -5px; border-bottom: 0px solid #999 }
@@ -129,7 +129,7 @@ ul.slimmenu li .sub-collapser > i {
 ul.slimmenu li ul {
     margin: 0;
     list-style-type: none;
-    width: 300px;
+    width: 350px;
 }
 ul.slimmenu li ul li { background-color: lighten(#4aa353, 30); width: 300px; border-radius: 4px; } /* width of dropdown menu */
 ul.slimmenu li > ul {
@@ -138,7 +138,7 @@ ul.slimmenu li > ul {
     left: 20px;
     top: 45px;
     z-index: 999;
-    width: 300px;
+    width: 350px;
 } /* This controls the background color of the sub menu */
 
 ul.slimmenu li > ul > li ul {
@@ -146,7 +146,7 @@ ul.slimmenu li > ul > li ul {
     position: absolute;
     top: 0;
     z-index: 999;
-    width: 300px;
+    width: 350px;
 } /* This controls the uo within the sub menu */
 
 ul.slimmenu.collapsed li {

@@ -31,8 +31,15 @@
 </head>
 <body>
   <header>
+    <div class="socialmediaicons"><span class="title"></span>
+        <ul>
+          <li class="donate"><a href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=s100792"><%= image_tag("Donate_Now.jpg") %></a></li>
+          <li><a href="http://linkedin.com"><%= image_tag("linkedin.png") %></a></li>
+          <li><a href="http://twitter.com"><%= image_tag("twitter.png") %></a></li>
+          <li><a href="http://facebook.com"><%= image_tag("facebook.png") %></a></li>
+        </ul>
+      </div>
     <div class="slimmenu">
-      <section class="layout">
         <ul id="navigation" class="slimmenu">
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About Us", welcome_about_path %></li>
@@ -44,7 +51,7 @@
               <li><%= link_to "School Uniform", welcome_school_path %></li>
               <li><%= link_to "Gift of Giving", welcome_gift_path %></li>
               <li><%= link_to "Bicycle Program", welcome_bicycle_path %></li>
-              <li><%= link_to "Sign Language", welcome_sign_path %></li>
+              <li><%= link_to "Sign Language Program", welcome_sign_path %></li>
               <li><%= link_to "Eye Clinic", welcome_eye_path %></li>
             </ul>
           </li>
@@ -53,20 +60,12 @@
           <li><%= link_to "How You Can Help", welcome_how_path %></li>
           <li><%= link_to "Contact Us", welcome_contact_path %></li>
         </ul>
-      </section>
     </div>
   </header>
+
   <%= yield %>
   <footer>
     <section class="layout">
-      <div class="socialmediaicons"><span class="title"></span>
-        <ul>
-          <li><p>Together We Can Make A Difference!<p></li>
-          <li><a href="http://twitter.com"><%= image_tag("twitter.png") %></a></li>
-          <li><a href="http://facebook.com"><%= image_tag("facebook.png") %></a></li>
-          <li><a href="http://linkedin.com"><%= image_tag("linkedin.png") %></a></li>
-        </ul>
-      </div>
     </section>
   </footer>
   <script src="jquery.slimmenu.min.js"></script>

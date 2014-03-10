@@ -91,6 +91,13 @@ $large               :       75em;
 	}
 }
 
+.page-title {
+
+	h1 {
+		margin: 0px;
+	}
+}
+
 ////////////////////////////////////
 //Styling for mobile first layout//
 //////////////////////////////////
@@ -100,7 +107,7 @@ body {
 }
 
 h1 {
-	color: $hopeGreen;
+	color: $hopeBlue;
 }
 
 p {
@@ -168,6 +175,7 @@ p {
 
 	h1 {
 		text-align: center;
+		margin: 0px;
 	}
 }
 
@@ -211,24 +219,37 @@ p {
 }
 
 .socialmediaicons {
-
-	background: $hopeGreen;
+	@include container;
 
 	p {
-		color: $hopeYellow;
-		font-size: 24px;
-		margin: 10px;
-	}
-
-	li {
-		display: inline-block;
 		margin: 0px;
 	}
 
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	li {
+		float: right;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+	}
+
 	img {
-		@include border-radius(50%);
-		height: 30px;
-		border: 2px solid white;
+		@include border-radius(10px);
+		height: 50px;
+		width: 50px;
+		margin-left: 10px;
+	}
+}
+
+.donate {
+
+	img {
+		height: 50px;
+		width: 150px !important;
 	}
 }
 
@@ -236,7 +257,7 @@ p {
 
 	h3 {
 		color: $hopeGreen;
-		margin-top: 0px;
+		margin: 0px;
 		text-align: center;
 	}
 }
@@ -267,7 +288,7 @@ p {
 
 	h3 {
 		color: $hopeGreen;
-		margin-top: 10px;
+		margin: 0px;
 		text-align: center;
 	}
 }
@@ -307,6 +328,7 @@ p {
 }
 
 .page-photos {
+	@include border-radius(10px);
 
 	img {
 		border-radius: 10px;

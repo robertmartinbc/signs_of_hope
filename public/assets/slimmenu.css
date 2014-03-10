@@ -81,7 +81,7 @@ ul.slimmenu li {
   position: relative;
   display: inline-block;
   background-color: #ECFFA6;
-  margin: 0px;
+  margin-bottom: 1px;
 }
 
 /* This controld the spacing between list items */

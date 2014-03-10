@@ -101,7 +101,7 @@ ul.slimmenu li .sub-collapser {
     position: absolute;
     right: 0;
     top: 0;
-    width: 20px;
+    width: 30px;
     height: 100%;
     text-align: center;
     z-index: 999;
@@ -118,9 +118,10 @@ ul.slimmenu li .sub-collapser:before {
 
 ul.slimmenu li .sub-collapser > i {
     color: #0195DD;
-    font-size: 8px;
+    font-size: 12px;
     display: inline-block;
     vertical-align: middle;
+    margin-left: 10px;
 } /* This controls the color of the caret */
 
 ul.slimmenu li ul {

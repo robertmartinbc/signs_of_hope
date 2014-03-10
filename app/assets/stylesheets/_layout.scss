@@ -251,8 +251,9 @@ p {
 
 .socialmediaicons {
 	@include container;
-	background: $hopeGreen;
-		padding: 10px;
+	@include border-radius(10px);
+	background: lighten($hopeGreen, 10);
+	padding: 10px;
 
 	p {
 		margin: 0px;
@@ -282,14 +283,14 @@ p {
 
 	img {
 		height: 35px;
-		width: 100px !important;
+		width: 105px !important;
 	}
 } /* This sectio for movbile first styling of social media icons */
 
 .socialmediaicons {
 	@include at-breakpoint($medium) {
-
-		background: $hopeGreen;
+		@include border-radius(10px);
+		background: lighten($hopeGreen, 10);
 		padding: 10px;
 	p {
 		margin: 0px;

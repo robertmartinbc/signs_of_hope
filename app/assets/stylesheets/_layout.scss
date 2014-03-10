@@ -309,10 +309,11 @@ p {
 .page-photos {
 
 	img {
-		@include border-radius(10px);
+		border-radius: 10px;
 		width: 75px;
 		height: 75px;
 		margin: 5px;
+		margin-left: 10px;
 	}
 }
 

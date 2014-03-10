@@ -5,6 +5,9 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="slimmenu.css" type="text/css">
+
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>
@@ -27,28 +30,30 @@
 </script>
 </head>
 <body>
-  <header class="navigation-layout">
+  <header>
     <div class="navigation">
-        <ul class="menu">
+      <section class="layout">
+        <ul id="navigation" class="slimmenu">
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About Us", welcome_about_path %></li>
+          <li><%= link_to "Programs", "#" %>
+            <ul>
+              <li><%= link_to "Breakfast Program", welcome_breakfast_path %></li>
+              <li><%= link_to "Family Sponsorship", welcome_family_path %></li>
+              <li><%= link_to "Classroom Project", welcome_classroom_path %></li>
+              <li><%= link_to "School Uniform", welcome_school_path %></li>
+              <li><%= link_to "Gift of Giving", welcome_gift_path %></li>
+              <li><%= link_to "Bicycle Program", welcome_bicycle_path %></li>
+              <li><%= link_to "Sign Language", welcome_sign_path %></li>
+              <li><%= link_to "Eye Cliniv", welcome_eye_path %></li>
+            </ul>
+          </li>
           <li><%= link_to "Events", welcome_events_path %></li>
           <li><%= link_to "Sponsors", welcome_sponsors_path %></li>
-          <li><%= link_to "Programs", "#" %>
-          <ul>
-          <li><%= link_to "Breakfast Program", welcome_breakfast_path %></li>
-          <li><%= link_to "Family Sponsorship", welcome_family_path %></li>
-          <li><%= link_to "Classroom Project", welcome_classroom_path %></li>
-          <li><%= link_to "School Uniform", welcome_school_path %></li>
-          <li><%= link_to "Gift of Giving", welcome_gift_path %></li>
-          <li><%= link_to "Bicycle Program", welcome_bicycle_path %></li>
-          <li><%= link_to "Sign Language Program", welcome_sign_path %></li>
-          <li><%= link_to "Eye Clinic", welcome_eye_path %></li>
-          </ul>
-          </li>
           <li><%= link_to "How You Can Help", welcome_how_path %></li>
           <li><%= link_to "Contact Us", welcome_contact_path %></li>
-          </ul>
+        </ul>
+      </section>
     </div>
   </header>
   <%= yield %>
@@ -63,5 +68,17 @@
       </div>
     </section>
   </footer>
+  <script src="jquery.slimmenu.min.js"></script>
+  <script>
+    $('#navigation').slimmenu(
+{
+    resizeWidth: '800',
+    collapserTitle: 'Main Menu',
+    animSpeed: 'medium',
+    easingEffect: null,
+    indentChildren: false,
+    childrenIndenter: '&nbsp;'
+});
+  </script>
 </body>
 </html>

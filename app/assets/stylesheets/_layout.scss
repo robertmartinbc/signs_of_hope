@@ -158,6 +158,7 @@ p {
 .members {
 
 		img {
+			@include border-radius(10px);
 			@include span-columns(2,12);
 			@include border-radius(10px);
 			width: 180px;

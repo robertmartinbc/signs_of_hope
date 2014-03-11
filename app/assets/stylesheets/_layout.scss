@@ -84,9 +84,9 @@ $large               :       75em;
 
 	img {
 		@include border-radius(10px);
-		width: 120px !important;
-		height: 120px !important;
-		margin: 10px !important;
+		width: 75px !important;
+		height: 75px !important;
+		margin: 5px !important;
 		}
 	}
 }
@@ -410,7 +410,6 @@ p {
 		border-radius: 10px;
 		width: 75px;
 		height: 75px;
-		margin: 5px;
 		margin-left: 15px;
 	}
 }

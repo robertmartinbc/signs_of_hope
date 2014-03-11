@@ -429,7 +429,7 @@ p {
 		@include border-radius(10px);
 			border: 1px solid $hopeGreen;
 			background: lighten($hopeYellow, 10);
-			padding: 5px;
+			padding: 20px;
 			margin: 0px;
 			margin-bottom: 10px;
 	}
@@ -506,19 +506,190 @@ p {
 }
 
 .gold-sponsors {
+	@include at-breakpoint($medium) {
+		@include border-radius(10px);
+	p {
+		margin: 0px;
+	}
 
 	ul {
-		list-style: none;
-		padding: 0px;
 		margin: 0px;
+		padding: 0px;
+		margin-left: 50px !important;
+	}
+
+	li {
+		display: inline-block !important;
+		padding: 5px;
 	}
 
 	img {
 		@include border-radius(10px);
-		border: 1px solid $hopeGreen;
+		height: 80px !important;
+		width: 200px !important;
+		}
+	}
+}
+
+.gold-sponsors {
+
+	p {
+		margin: 0px;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	li {
+		display: block;
+		margin: 0px;
+		padding-bottom: 10px;
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 80px;
 		width: 100%;
-		max-width: 320px;
+		max-width: 320;
+	}
+}
+
+.silver-sponsors {
+	@include at-breakpoint($medium) {
+		@include border-radius(10px);
+	p {
+		margin: 0px;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+		margin-left: 125px !important;
+	}
+
+	li {
+		display: inline-block !important;
+		padding: 10px;
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 40px !important;
+		width: 150px !important;
+		}
+	}
+}
+
+.silver-sponsors {
+
+	padding-bottom: 20px;
+	p {
+		margin: 0px;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	li {
+		display: block;
+		margin: 0px;
+		padding-top: 20px;
+
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 40px;
+		width: 100%;
+		max-width: 250;
+	}
+}
+
+.island-tents {
+	@include border-radius(10px);
+	background: $islandTents;
+
+	img {
 		height: 60px;
-		margin-bottom: 10px;
+	}
+}
+
+.seaside-designs {
+
+	h1 {
+		text-align: center;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+}
+
+.bronze-sponsors {
+	@include at-breakpoint($medium) {
+		@include border-radius(10px);
+	p {
+		margin: 0px;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+		margin-left: 125px !important;
+	}
+
+	li {
+		display: inline-block !important;
+		padding: 10px;
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 40px !important;
+		width: 100px !important;
+		}
+	}
+}
+
+.bronze-sponsors {
+
+	padding-bottom: 20px;
+	p {
+		margin: 0px;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	li {
+		display: block;
+		margin: 0px;
+		padding-top: 20px;
+
+	}
+
+	img {
+		@include border-radius(10px);
+		height: 40px;
+		width: 100%;
+		max-width: 250;
+	}
+}
+
+.atwood-brewka {
+
+	h4 {
+		text-align: center;
+		color: $islandTents;
+	}
+
+	a:link {
+		text-decoration: none;
 	}
 }

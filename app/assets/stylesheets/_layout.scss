@@ -693,3 +693,22 @@ p {
 		text-decoration: none;
 	}
 }
+
+.other-sponsors {
+	@include at-breakpoint($medium) {
+	margin-left: 250px;
+
+	p {
+		font-size: 18px;
+		color: $hopeBlue;
+		}
+	}
+}
+
+.other-sponsors {
+
+	p {
+		font-size: 18px;
+		color: $hopeBlue;
+	}
+}

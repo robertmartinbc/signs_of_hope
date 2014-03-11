@@ -185,7 +185,7 @@ p {
 		text-align: center;
 		margin-top: 20px;
 		padding: 0px;
-		color: $hopeBlue;
+		color: darken($hopeBlue, 10);
 	} // styling for h2 tags for mobile first layout on home page
 
 	ul {
@@ -199,6 +199,38 @@ p {
 			border: 1px solid $hopeGreen;
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
+			color: $hopeBlue;
+			font-size: 20px;
+			text-align: justify;
+	}
+}
+
+.statements {
+	@include at-breakpoint($medium) {
+
+	h1 {
+		font-size: 24px;
+		text-align: center;
+		margin-top: 20px;
+		padding: 0px;
+		color: darken($hopeBlue, 10);
+	} // styling for h2 tags for mobile first layout on home page
+
+	ul {
+		padding: 0px;
+	}
+
+
+	li {
+		@include border-radius(10px);
+			display: block;
+			border: 1px solid $hopeGreen;
+			background: lighten($hopeYellow, 10);
+			padding: 10px;
+			color: $hopeBlue;
+			font-size: 20px;
+			text-align: justify;
+		}
 	}
 }
 

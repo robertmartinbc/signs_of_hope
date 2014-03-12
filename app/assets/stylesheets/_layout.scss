@@ -30,6 +30,14 @@ $large               :       75em;
 	@include container;
 		padding: 0px;
 
+		ul {
+			margin: 0px;
+		}
+
+		li {
+			color: $hopeBlue;
+		}
+
 	.page-text {
 		@include at-breakpoint($medium) {
 			@include span-columns(8,12);
@@ -232,6 +240,11 @@ p {
 
 	ul {
 		padding: 0px;
+	}
+
+	a:link {
+		color: darken($hopeBlue, 10);
+		text-decoration:none;
 	}
 
 
@@ -750,4 +763,12 @@ p {
 		margin: 0px;
 		margin-bottom: 20px;
 	}
+}
+
+.highlighted-text {
+		color: darken($hopeBlue, 10);
+
+		a:link {
+			text-decoration: none;
+		}
 }

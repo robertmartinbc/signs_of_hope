@@ -6,7 +6,7 @@
 
 <div class="page-title">
 	<section class="layout">
-		<h1>How You Can Help<a href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=s100792"><%= image_tag("Donate_Now.jpg") %></a></h1>
+		<h1>How You Can Help<a href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=s100792" target="_blank"><%= image_tag("Donate_Now.jpg") %></a></h1>
 	</section>
 </div>
 
@@ -16,7 +16,7 @@
 		<p>Signs of Hope in Africa and the families of Jambiani in which we are supporting, are extremely grateful for your donation. Donations can be made online securely through canadahelps.org
 		<br>
 		<br>
-		Please contact us if you would like to donate via cheque or money order.</p>
+		<strong class="highlighted-text">Please <%= link_to "Contact Us", welcome_contact_path %> if you would like to donate via cheque or money order.</strong></p>
 	</section>
 </div>
 
@@ -26,7 +26,7 @@
 		<p>Do you want to give a meaningful gift but are on a limited budget? Are you struggling to find a unique gift for someone who “has everything”? Increasingly, many people are choosing to donate to a charity in the name of the gift recipient – truly giving two gifts in one!
 		<br>
 		<br>
-		Details on this innovative idea can be found under Programs.</p>
+		<strong class="highlighted-text">Details on this innovative idea can be found under <%= link_to "Programs", welcome_programs_path %>.</strong></p>
 	</section>
 </div>
 
@@ -42,7 +42,7 @@
 		<strong>Amazing Race for Africa</strong> - First Sunday in November 11:30 am to 4:30 pm
 		<br>
 		<br>
-		For event details, please see our Events page. To volunteer your services, provide sponsorship, or donate prizes, please email us at info@signsofhopeinafrica.org.</p>
+		<strong class="highlighted-text">For event details, please see our <%= link_to "Events", welcome_events_path %> page. To volunteer your services, provide sponsorship, or donate prizes, please email us at info@signsofhopeinafrica.org.</strong></p>
 	</section>
 </div>
 
@@ -82,7 +82,7 @@
 		<p><strong>Increase Awareness</strong>
 			<br>
 			<br>
-			Please consider adding our website link on your social media (ie: Facebook, Twitter, Pinterest).
+			<strong class="highlighted-text">Please consider adding our website link on your social media (ie: Facebook, Twitter, LinkedIn).</strong>
 		</p>
 	</section>
 </div>

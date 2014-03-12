@@ -48,7 +48,7 @@
 .collapse-button:hover, .collapse-button:focus {
   background-image: none;
   border-radius: 4px;
-  background-color: #0195DD;
+  background-color: #0173aa;
   color: #0195DD;
 }
 
@@ -104,7 +104,7 @@ ul.slimmenu > li:last-child {
 /* line 81, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li a {
   display: block;
-  color: #0195DD;
+  color: #0173aa;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   font-family: 'Open Sans', sans-serif;
@@ -151,7 +151,7 @@ ul.slimmenu li .sub-collapser:before {
 /* This also controls the caret state */
 /* line 121, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li .sub-collapser > i {
-  color: #0195DD;
+  color: #0173aa;
   font-size: 12px;
   display: inline-block;
   vertical-align: middle;
@@ -169,6 +169,7 @@ ul.slimmenu li ul {
 /* line 134, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li ul li {
   background-color: #acdab1;
+  left: -10px;
   width: 300px;
   border-radius: 4px;
 }
@@ -178,7 +179,7 @@ ul.slimmenu li ul li {
 ul.slimmenu li > ul {
   display: none;
   position: absolute;
-  left: 20px;
+  left: -10px;
   top: 45px;
   z-index: 999;
   width: 350px;

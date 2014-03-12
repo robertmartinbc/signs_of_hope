@@ -156,7 +156,7 @@ $large               :       75em;
 //////////////////////////////////
 
 body {
-	background: lighten($hopeYellow, 5);
+	@include background(linear-gradient(top, lighten($hopeYellow, 3), $hopeWhite));
 }
 
 h1 {
@@ -214,6 +214,10 @@ p {
 		padding: 0px;
 	}
 
+a:link {
+		color: darken($hopeBlue, 10);
+		text-decoration: none;
+	}
 
 	li {
 		@include border-radius(10px);

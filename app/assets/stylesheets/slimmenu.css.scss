@@ -131,14 +131,14 @@ ul.slimmenu li ul {
     list-style-type: none;
     width: 350px;
 }
-ul.slimmenu li ul li { background-color: lighten(#4aa353, 30); left: -10px; width: 300px; border-radius: 4px; } /* width of dropdown menu */
+ul.slimmenu li ul li { background-color: lighten(#4aa353, 30); left: -10px; width: 250px; border-radius: 4px; } /* width of dropdown menu */
 ul.slimmenu li > ul {
     display: none;
     position: absolute;
     left: -10px;
     top: 45px;
     z-index: 999;
-    width: 350px;
+    width: 300px;
 } /* This controls the background color of the sub menu */
 
 ul.slimmenu li > ul > li ul {

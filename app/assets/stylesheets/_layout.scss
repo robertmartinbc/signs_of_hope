@@ -43,7 +43,7 @@ $large               :       75em;
 
 	.boardmembers {
 		@include at-breakpoint($medium) {
-			@include span-columns(3,12);
+			@include span-columns(2,12);
 		}
 	}
 
@@ -54,6 +54,20 @@ $large               :       75em;
 			width: 150px;
 			height: 200px;
 		}
+	}
+
+	.about-us {
+	@include at-breakpoint($medium) {
+	}
+
+	p {
+		@include border-radius(10px);
+		border: 1px solid $hopeGreen;
+		background: lighten($hopeYellow, 10);
+		padding: 20px;
+		margin: 0px;
+	}
+
 	}
 
 	.biography {
@@ -237,8 +251,8 @@ p {
 .board {
 
 	h1 {
-		text-align: center;
-		margin: 0px;
+		margin-bottom: 10px;
+		padding: 0px;
 	}
 }
 
@@ -380,6 +394,10 @@ p {
 
 
 .easter-poster {
+
+	h3 {
+		color: $hopeBlue;
+	}
 
 	img {
 		@include border-radius(10px);
@@ -712,5 +730,24 @@ p {
 		font-size: 18px;
 		color: $hopeBlue;
 		text-align: left;
+	}
+}
+
+.how-you-can {
+	margin: 0px;
+
+	h1 {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		@include border-radius(10px);
+		background: lighten($hopeYellow, 10);
+		border: 1px solid $hopeGreen;
+		margin-top: 10px;
+		padding: 20px;
+		margin: 0px;
+		margin-bottom: 20px;
 	}
 }

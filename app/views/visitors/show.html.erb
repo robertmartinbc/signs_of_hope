@@ -1,16 +1,26 @@
+<div class="hero">
+  <section class="layout">
+    <div class="branding"><%= image_tag("header_image_1.jpg") %></div>
+  </section>
+</div>
 
-  	<div>
+<div class="page-title">
+  <section class="layout">
+    <h1>Thank You<a href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=s100792" target="_blank"><%= image_tag("Donate_Now.jpg") %></a></h1>
+  </section>
+</div>
+  	<div class="program-page-layout">
 			<p>Hello <%= @visitor.name %>,</p>
 
 			<p>Here is a summary of your enquiry:</P>
 				<br>
-			<p>Name:&nbsp;&nbsp; <font color = "white"><%= @visitor.name %></font></p>
+			<p>Name:&nbsp;&nbsp;<%= @visitor.name %></p>
 
-			<p>Email:&nbsp;&nbsp; <font color = "white"><%= @visitor.email %></font></p>
+			<p>Email:&nbsp;&nbsp;<%= @visitor.email %></p>
 
-			<p>Telephone:&nbsp;&nbsp; <font color = "white"><%= @visitor.phone %></font></p>
+			<p>Telephone:&nbsp;&nbsp;<%= @visitor.phone %></p>
 
-			<p>Enquiry:&nbsp;&nbsp; <font color = "white"><%= @visitor.message %></font></p>
+			<p>Enquiry:&nbsp;&nbsp;<%= @visitor.message %></p>
 			<br>
 			<p>We will contact you shortly to discuss your requirements.</p>
 			<br>

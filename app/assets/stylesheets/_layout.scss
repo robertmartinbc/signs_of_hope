@@ -251,7 +251,6 @@ a:link {
 		text-decoration:none;
 	}
 
-
 	li {
 		@include border-radius(10px);
 			display: block;
@@ -775,4 +774,64 @@ a:link {
 		a:link {
 			text-decoration: none;
 		}
+}
+
+.simple-form {
+
+		p {
+			color: darken($hopeBlue,10);
+		}
+
+	 input {
+	 	@include border-radius(4px);
+	 	height: 30px;
+	 	margin-bottom: 10px;
+	 	color: darken($hopeBlue,10);
+	 	font-size: 12px;
+	 }
+
+	 ::-webkit-input-placeholder {
+   color: darken($hopeBlue,10);
+   font-size: 12px;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: darken($hopeBlue,10);
+   font-size: 12px;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: darken($hopeBlue,10);
+   font-size: 12px;
+	}
+
+	:-ms-input-placeholder {
+	   ccolor: darken($hopeBlue,10);
+   font-size: 12px;
+	}
+}
+
+.create {
+    background-color: lighten($hopeGreen,10);
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color: $hopeYellow !important;
+    height: 60px !important;
+    font-family:arial;
+    font-size: 14px !important;
+    font-weight:bold;
+    padding:7px 24px;
+    text-decoration:none;
+    text-shadow:0px 0px 0px #70706f;
+    margin-top: 10px;
+    margin-left: 0px;
+}.create:hover {
+    background-color: lighten($hopeGreen,20);
+    cursor: pointer;
+}.create:active {
+    position:relative;
+    top:1px;
 }

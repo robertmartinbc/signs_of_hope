@@ -1,28 +1,40 @@
+<div class="hero">
+  <section class="layout">
+    <div class="branding"><%= image_tag("header_image_1.jpg") %></div>
+  </section>
+</div>
 
-    <div>
-        <%= simple_form_for @visitor do |f| %>
-        <div>
-      <p>Please fill out the form below:</p>
-    </div>
+<div class="page-title">
+  <section class="layout">
+    <h1>Contact Us<a href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=s100792" target="_blank"><%= image_tag("Donate_Now.jpg") %></a></h1>
+  </section>
+</div>
+<div class="program-page-layout">
+  <section="layout">
+    <%= simple_form_for @visitor, :html => { :class => "simple-form"} do |f| %>
       <div>
-        <%= f.input :name, label: false, placeholder: 'Enter Name' %>
+        <p>Please fill out the form below:</p>
       </div>
+      <div class="simple-form">
+        <%= f.input :name, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Enter Name' %>
+      </div>
+      <div>
         <div>
-          <div>
-            <%= f.input :email, label: false, placeholder: 'Enter Email' %>
-          </div>
-          <div>
-            <%= f.input :phone, label: false, placeholder: 'Enter Telephone No' %>
-          </div>
-          <div>
-            <%= f.input :message, :input_html => { :rows => 2}, label: false, placeholder: 'Enter Enquiry' %>
-          </div>
-          <div>
-            <%= f.submit "Submit Enquiry" %>
-          </div>
-          <div>
-          <% end %>
+          <%= f.input :email, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Enter Email' %>
         </div>
+      <div>
+        <%= f.input :phone, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Enter Telephone No' %>
       </div>
+      <div>
+        <%= f.input :message,as: :text, :input_html => { style: 'height: 80px; width: 280px; '}, label: false, placeholder: 'Enter Enquiry'%>
+      </div>
+      <div>
+        <%= f.submit "Submit Enquiry", :class => "create" %>
+      </div>
+      <div>
+      <% end %>
     </div>
+  </div>
+</section>
+</div>
 

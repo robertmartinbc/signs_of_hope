@@ -1,0 +1,28 @@
+
+    <div>
+        <%= simple_form_for @visitor do |f| %>
+        <div>
+      <p>Please fill out the form below:</p>
+    </div>
+      <div>
+        <%= f.input :name, label: false, placeholder: 'Enter Name' %>
+      </div>
+        <div>
+          <div>
+            <%= f.input :email, label: false, placeholder: 'Enter Email' %>
+          </div>
+          <div>
+            <%= f.input :phone, label: false, placeholder: 'Enter Telephone No' %>
+          </div>
+          <div>
+            <%= f.input :message, :input_html => { :rows => 2}, label: false, placeholder: 'Enter Enquiry' %>
+          </div>
+          <div>
+            <%= f.submit "Submit Enquiry" %>
+          </div>
+          <div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+

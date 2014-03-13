@@ -1,4 +1,19 @@
 SignsOfHope::Application.routes.draw do
+
+  resources :visitors
+
+  get "visitor/edit"
+
+  get "visitor/index"
+
+  get "visitor/new"
+
+  get "visitor/show"
+
+  get "notifications/index"
+
+  get "notifications/create"
+
   root to: "welcome#index"
 
   get "welcome/about"

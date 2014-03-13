@@ -22,7 +22,6 @@ group :assets do
   gem 'compass-rails'
   gem 'susy'
   gem 'fancybox2-rails', '~> 0.2.4'
-  gem 'simple_form'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -31,6 +30,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'simple_form'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

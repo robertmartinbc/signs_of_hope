@@ -46,8 +46,8 @@ GEM
       compass (>= 0.12.2, < 0.14)
     erubis (2.7.0)
     execjs (2.0.2)
-    fancybox2-rails (0.2.6)
-      railties (>= 3.1.0)
+    fancybox2-rails (0.2.8)
+      railties (>= 3.1.0, < 5.0)
     fssm (0.2.10)
     hike (1.2.3)
     i18n (0.6.9)
@@ -121,7 +121,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
-  fancybox2-rails (~> 0.2.4)
+  fancybox2-rails (~> 0.2.8)
   jquery-rails
   pg
   rails (= 3.2.14)

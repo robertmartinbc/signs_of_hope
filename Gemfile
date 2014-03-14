@@ -21,7 +21,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'compass-rails'
   gem 'susy'
-  gem 'fancybox2-rails', '~> 0.2.4'
+  gem 'fancybox2-rails', '~> 0.2.8'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

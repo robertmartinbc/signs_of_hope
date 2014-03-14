@@ -93,7 +93,4 @@ Q.length;w--;)Q[w].cb()}function O(){for(var w=Q.length;w--;)Q[w].hb();J.hb()}fu
 h=f.F+"track-hover",k=f.La+"hover",n=f.La+"active",m=f.La+"focus",p=f.La+"first-child",r={background:1,bgColor:1,display:1},t={},v=[];d.yd=function(l){var q=f.p.Ba(l);return e[q]||(e[q]=new d(l))};d.m=function(l){l=f.p.Ba(l);var q=e[l];if(q){q.m();delete e[l]}};d.md=function(){var l=[],q;if(e){for(var s in e)if(e.hasOwnProperty(s)){q=e[s];l.push(q.qd);q.m()}e={}}return l};return d}();f.supportsVML=f.zc;f.attach=function(a){f.ja<10&&f.zc&&f.kb.yd(a).Ed()};f.detach=function(a){f.kb.m(a)}};
 var $=element;function init(){if(doc.media!=="print"){var a=window.PIE;a&&a.attach($)}}function cleanup(){if(doc.media!=="print"){var a=window.PIE;if(a){a.detach($);$=0}}}$.readyState==="complete"&&init();
 </script>
-
-<script type="text/javascript">
-alert("PIE works);
 </PUBLIC:COMPONENT>

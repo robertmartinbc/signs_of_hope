@@ -975,6 +975,7 @@ a:link {
     img {
     	@include border-radius(10px);
     	width: 100%;
+    	behavior: url(/assets/PIE.htc);
     }
 }
 

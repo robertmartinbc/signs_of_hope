@@ -968,8 +968,14 @@ a:link {
 }
 
 .slideshow {
-    position:relative;
-    height: 250px;
+    position: relative;
+		height: 100px;
+
+
+    img {
+    	@include border-radius(10px);
+    	width: 100%;
+    }
 }
 
 .slideshow IMG {
@@ -986,3 +992,33 @@ a:link {
 .slideshow IMG.last-active {
     z-index:9;
 }
+
+.slideshow {
+		@include at-breakpoint($medium) {
+    position: relative;
+    height: 240px;
+
+
+
+    img {
+    	@include border-radius(10px);
+    	width: 100%;
+    }
+}
+
+.slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+.slideshow IMG.active {
+    z-index:10;
+}
+
+.slideshow IMG.last-active {
+    z-index:9;
+	}
+}
+

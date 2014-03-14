@@ -224,6 +224,7 @@ p {
 	behavior: url(/assets/PIE.htc);
 
 	img {
+		@include border-radius(10px);
 		width: 100%;
 		margin: 0px;
 		height: auto;

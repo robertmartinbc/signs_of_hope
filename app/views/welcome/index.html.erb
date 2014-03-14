@@ -1,6 +1,10 @@
 <div class="hero">
   <section class="layout">
-    <div class="branding"><%= image_tag("Signs_of_Hope_in_Africa_1.jpg") %></div>
+    <div class="slideshow">
+    	<%= image_tag("Signs_of_Hope_in_Africa_1.jpg", class: "active") %>
+    	<%= image_tag("Signs_of_Hope_in_Africa_2.jpg") %>
+    	<%= image_tag("Signs_of_Hope_in_Africa_3.jpg") %>
+    </div>
   </section>
 </div>
 
@@ -18,4 +22,18 @@
 	</div>
 </section>
 </div>
+<script>
+	function slideSwitch() {
+    var $active = $('.slideshow IMG.active');
+    var $next = $active.next();
+
+    $next.addClass('active');
+
+    $active.removeClass('active');
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 4000 );
+});
+</script>
 

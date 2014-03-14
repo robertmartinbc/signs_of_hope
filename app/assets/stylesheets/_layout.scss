@@ -61,7 +61,7 @@ $large               :       75em;
 			@include border-radius(10px);
 			width: 150px;
 			height: 200px;
-			behaviour: url(Pie.htc);
+			behaviour: url(/Pie.htc);
 		}
 	}
 
@@ -75,7 +75,7 @@ $large               :       75em;
 		background: lighten($hopeYellow, 10);
 		padding: 20px;
 		margin: 0px;
-		behaviour: url(Pie.htc);
+		behaviour: url(/Pie.htc);
 	}
 
 	}
@@ -86,7 +86,7 @@ $large               :       75em;
 			@include border-radius(10px);
 			background: lighten($hopeYellow, 13);
 			padding: 10px;
-			behaviour: url(Pie.htc);
+			behaviour: url(/Pie.htc);
 
 			h3 {
 				margin-top: 0px;
@@ -112,7 +112,7 @@ $large               :       75em;
 		width: 75px !important;
 		height: 75px !important;
 		margin: 5px !important;
-		behaviour: url(Pie.htc);
+		behaviour: url(/Pie.htc);
 		}
 	}
 }
@@ -132,7 +132,7 @@ $large               :       75em;
 		@include border-radius(10px);
 		height: 40px;
 		width: 75px;
-		behaviour: url(Pie.htc);
+		behaviour: url(/Pie.htc);
 	}
 }
 
@@ -152,7 +152,7 @@ $large               :       75em;
 		@include border-radius(10px);
 		height: 60px;
 		width: 150px;
-		behaviour: url(Pie.htc);
+		behaviour: url(/Pie.htc);
 		}
 	}
 }
@@ -163,7 +163,7 @@ $large               :       75em;
 
 body {
 	@include background(linear-gradient(top, lighten($hopeYellow, 3), $hopeWhite));
-	behaviour: url(Pie.htc);
+	behaviour: url(/Pie.htc);
 }
 
 h1 {

@@ -236,6 +236,7 @@ a:link {
 			color: $hopeBlue;
 			font-size: 20px;
 			text-align: justify;
+			behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -268,6 +269,7 @@ a:link {
 			color: $hopeBlue;
 			font-size: 20px;
 			text-align: justify;
+			behavior: url(/assets/PIE.htc);
 		}
 	}
 }
@@ -293,6 +295,7 @@ a:link {
 			width: 180px;
 			height: 240px;
 			padding: 2px;
+			behavior: url(/assets/PIE.htc);
 		}
 	}
 
@@ -300,6 +303,7 @@ a:link {
 	@include border-radius(10px);
 	border: 1px solid $hopeGreen;
 	margin-bottom: 20px;
+	behavior: url(/assets/PIE.htc);
 
 	h3 {
 		@include border-radius(10px);
@@ -307,6 +311,7 @@ a:link {
 		margin: 0px;
 		background: lighten($hopeYellow, 10);
 		padding: 10px;
+		behavior: url(/assets/PIE.htc);
 
 	}
 
@@ -316,6 +321,7 @@ a:link {
 			padding: 10px;
 			margin: 0px;
 			color: $hopeBlue;
+			behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -324,6 +330,7 @@ a:link {
 	@include border-radius(10px);
 	background: lighten($hopeGreen, 10);
 	padding: 10px;
+	behavior: url(/assets/PIE.htc);
 
 	p {
 		margin: 0px;
@@ -346,6 +353,7 @@ a:link {
 		height: 35px;
 		width: 35px;
 		margin-left: 5px;
+		behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -362,6 +370,7 @@ a:link {
 		@include border-radius(10px);
 		background: lighten($hopeGreen, 10);
 		padding: 10px;
+		behavior: url(/assets/PIE.htc);
 	p {
 		margin: 0px;
 	}
@@ -383,6 +392,7 @@ a:link {
 		height: 60px;
 		width: 60px;
 		margin-left: 10px;
+		behavior: url(/assets/PIE.htc);
 		}
 	}
 }
@@ -426,7 +436,8 @@ a:link {
 	img {
 		@include border-radius(10px);
 		width: 100%;
-		height: 600px;;
+		height: 600px;
+		behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -440,6 +451,7 @@ a:link {
 			padding: 10px;
 			margin: 0px;
 			color: $hopeBlue;
+			behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -448,7 +460,8 @@ a:link {
 	img {
 		@include border-radius(10px);
 		width: 100%;
-		height: 600px;;
+		height: 600px;
+		behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -462,6 +475,7 @@ a:link {
 			font-size: 20px;
 			padding: 10px;
 			margin: 0px;
+			behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -474,11 +488,13 @@ a:link {
 			padding: 20px;
 			margin: 0px;
 			margin-bottom: 10px;
+			behavior: url(/assets/PIE.htc);
 	}
 }
 
 .page-photos {
 	@include border-radius(10px);
+	behavior: url(/assets/PIE.htc);
 
 	img {
 		border-radius: 10px;
@@ -493,6 +509,7 @@ a:link {
 
 		.easter-poster {
 			@include span-columns(5,12);
+			behavior: url(/assets/PIE.htc);
 
 			img {
 				width: 100%;
@@ -508,6 +525,7 @@ a:link {
 
 		.easter-poster-text {
 			@include span-columns(6,12);
+			behavior: url(/assets/PIE.htc);
 
 			p {
 				margin-top: 30px;
@@ -516,6 +534,7 @@ a:link {
 
 		.race-poster {
 			@include span-columns(5,12);
+			behavior: url(/assets/PIE.htc);
 
 			img {
 				width: 100%;
@@ -529,6 +548,7 @@ a:link {
 
 		.race-poster-text {
 			@include span-columns(6,12);
+			behavior: url(/assets/PIE.htc);
 
 			p {
 				margin-top: 60px;
@@ -550,6 +570,7 @@ a:link {
 .gold-sponsors {
 	@include at-breakpoint($medium) {
 		@include border-radius(10px);
+		behavior: url(/assets/PIE.htc);
 	p {
 		margin: 0px;
 	}
@@ -569,6 +590,7 @@ a:link {
 		@include border-radius(10px);
 		height: 80px !important;
 		width: 200px !important;
+		behavior: url(/assets/PIE.htc);
 		}
 	}
 }
@@ -595,12 +617,14 @@ a:link {
 		height: 80px;
 		width: 100%;
 		max-width: 320;
+		behavior: url(/assets/PIE.htc);
 	}
 }
 
 .silver-sponsors {
 	@include at-breakpoint($medium) {
 		@include border-radius(10px);
+		behavior: url(/assets/PIE.htc);
 	p {
 		margin: 0px;
 	}
@@ -620,6 +644,7 @@ a:link {
 		@include border-radius(10px);
 		height: 40px !important;
 		width: 150px !important;
+		behavior: url(/assets/PIE.htc);
 		}
 	}
 }
@@ -648,12 +673,14 @@ a:link {
 		height: 40px;
 		width: 100%;
 		max-width: 250;
+		behavior: url(/assets/PIE.htc);
 	}
 }
 
 .island-tents {
 	@include border-radius(10px);
 	background: $islandTents;
+	behavior: url(/assets/PIE.htc);
 
 	img {
 		height: 60px;
@@ -674,6 +701,7 @@ a:link {
 .bronze-sponsors {
 	@include at-breakpoint($medium) {
 		@include border-radius(10px);
+		behavior: url(/assets/PIE.htc);
 	p {
 		margin: 0px;
 	}
@@ -693,6 +721,7 @@ a:link {
 		@include border-radius(10px);
 		height: 40px !important;
 		width: 100px !important;
+		behavior: url(/assets/PIE.htc);
 		}
 	}
 }
@@ -721,6 +750,7 @@ a:link {
 		height: 40px;
 		width: 100%;
 		max-width: 250;
+		behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -773,6 +803,7 @@ a:link {
 		padding: 20px;
 		margin: 0px;
 		margin-bottom: 20px;
+		behavior: url(/assets/PIE.htc);
 	}
 }
 
@@ -796,6 +827,7 @@ a:link {
 	 	margin-bottom: 10px;
 	 	color: darken($hopeBlue,10);
 	 	font-size: 12px;
+	 	behavior: url(/assets/PIE.htc);
 	 }
 
 	 ::-webkit-input-placeholder {

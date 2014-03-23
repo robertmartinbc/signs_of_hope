@@ -555,6 +555,7 @@ a:link {
 }
 
 .events-page-layout {
+	@include container;
 	@include at-breakpoint($medium) {
 		behavior: url(/assets/PIE.htc);
 
@@ -1027,3 +1028,13 @@ a:link {
 	}
 }
 
+.contact-page-layout {
+	@include container;
+	 @include at-breakpoint($medium) {
+
+	 	.contact-image {
+			@include span-columns(3,12);
+			margin-right: 100px;
+	 	}
+	 }
+}

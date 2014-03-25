@@ -56,8 +56,7 @@ $large               :       75em;
 .layout {
 	@include container;
 	padding: 1%;
-	padding-top: 10px;
-	padding-bottom: 0px;
+	padding: 10px;
 	behavior: url(/assets/PIE.htc);
 
 	.boardmembers {
@@ -95,7 +94,7 @@ $large               :       75em;
 
 	.biography {
 		@include at-breakpoint($medium) {
-			@include span-columns(9 omega,12);
+			@include span-columns(8 omega,12);
 			//@include border-radius(10px);
 			//background: lighten($hopeYellow, 13);
 			border: 1px solid $hopeBlue;
@@ -283,12 +282,17 @@ a:link {
 		behavior: url(/assets/PIE.htc);
 	}
 
+	p {
+		font-size: 18px;
+		color: darken($hopeGreen,10);
+	}
+
 	li {
 		@include border-radius(10px);
 			display: block;
 			//border: 1px solid $hopeBlue;
 			background: lighten($hopeYellow, 10);
-			padding: 10px;
+			//padding: 80px;
 			color: darken($hopeGreen,10);
 			font-size: 18px;
 			text-align: justify;
@@ -303,7 +307,8 @@ a:link {
 	h1 {
 		font-size: 24px;
 		//text-align: center;
-		margin-top: 10px;
+		margin: 0px;
+		padding-bottom: 50px;
 		padding: 0px;
 		color: $hopeBlue;
 		behavior: url(/assets/PIE.htc);
@@ -320,17 +325,25 @@ a:link {
 		behavior: url(/assets/PIE.htc);
 	}
 
+	p {
+		font-size: 18px;
+		color: darken($hopeGreen,10);
+		padding: 5px auto;
+	}
+
 	li {
 		@include border-radius(10px);
+			min-height: 200px;
 			width: 30%;
 			display: inline-block;
 			//border: 1px solid $hopeBlue;
 			//background: lighten($hopeYellow, 10);
 			padding: 10px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			color: darken($hopeGreen,10);
 			font-size: 18px;
-			text-align: justify;
+			text-align: justify !important;
+			text-justify:inter-word !important;
 			behavior: url(/assets/PIE.htc);
 		}
 	}

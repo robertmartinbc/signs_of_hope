@@ -56,6 +56,8 @@ $large               :       75em;
 .layout {
 	@include container;
 	padding: 1%;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	behavior: url(/assets/PIE.htc);
 
 	.boardmembers {
@@ -82,10 +84,10 @@ $large               :       75em;
 
 	p {
 		@include border-radius(10px);
-		//border: 1px solid $hopeBlue;
+		border: 1px solid $hopeBlue;
 		font-size: 18px;
 		color: darken($hopeGreen,10);
-		padding: 0px;
+		padding: 20px;
 		margin: 0px;
 	}
 
@@ -96,8 +98,8 @@ $large               :       75em;
 			@include span-columns(9 omega,12);
 			//@include border-radius(10px);
 			//background: lighten($hopeYellow, 13);
-			border: none;
-			padding: 0px;
+			border: 1px solid $hopeBlue;
+			padding: 20px;
 			margin: 0px;
 			behavior: url(/assets/PIE.htc);
 
@@ -270,7 +272,7 @@ a:link {
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
 			color: darken($hopeGreen,10);
-			font-size: 20px;
+			font-size: 18px;
 			text-align: justify;
 			behavior: url(/assets/PIE.htc);
 	}
@@ -307,7 +309,7 @@ a:link {
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
 			color: darken($hopeGreen,10);
-			font-size: 20px;
+			font-size: 18px;
 			text-align: justify;
 			behavior: url(/assets/PIE.htc);
 		}
@@ -555,11 +557,11 @@ a:link {
 
 	p {
 		@include border-radius(10px);
-			//border: 1px solid $hopeGreen;
+			border: 1px solid $hopeBlue;
 			//background: lighten($hopeYellow, 10);
 			color: darken($hopeGreen,10);
 			font-size: 18px;
-			//padding: 20px;
+			padding: 20px;
 			margin: 0px;
 			margin-bottom: 10px;
 			behavior: url(/assets/PIE.htc);
@@ -920,7 +922,7 @@ a:link {
 }
 
 .highlighted-text {
-		color: darken($hopeBlue, 10);
+		color: $hopeBlue;
 		behavior: url(/assets/PIE.htc);
 
 		a:link {

@@ -1,8 +1,8 @@
 .menu-collapser {
     position: relative;
     border-radius: 4px;
-    background-color: lighten(#4aa353, 10);
-    color: #ECFFA6;
+    background-color: #4AA353;
+    color: lighten(#ECFFA6,10);
     height: 48px;
     line-height: 48px;
     font-size: 20px;
@@ -17,7 +17,7 @@
     right: 6px;
     top: 25px;
     width: 40px;
-    background-color: red;
+    background-color: #0000FF;
     background-repeat: repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     border-radius: 4px 4px 4px 4px;
@@ -45,12 +45,12 @@
 .collapse-button:hover, .collapse-button:focus {
     background-image: none;
     border-radius: 4px;
-    background-color: darken(#0195DD,10);
+    background-color: #0000FF;
     color: #0195DD;
 } /* This controls the hover state of the navbar buttton */
 
 .collapse-button .icon-bar {
-    background-color: #ECFFA6;
+    background-color: lighten(#ECFFA6,10);
     border-radius: 1px 1px 1px 1px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
     display: block;
@@ -71,7 +71,7 @@ ul.slimmenu {
 ul.slimmenu li {
     position: relative;
     display: inline-block;
-    background-color: #ECFFA6;
+    background-color: lighten(#ECFFA6,10);
     margin-bottom: 1px;
 } /* This controld the spacing between list items */
 
@@ -80,7 +80,7 @@ ul.slimmenu > li:first-child { border-left: 0 }
 ul.slimmenu > li:last-child { margin-right: 0 }
 ul.slimmenu li a {
     display: block;
-    color: darken(#0195DD,10);
+    color: #0000FF;
     text-decoration: none;
     padding: 10px 20px 10px 20px;
     font-family: 'Open Sans', sans-serif;
@@ -94,7 +94,8 @@ ul.slimmenu li a {
 
 ul.slimmenu li a:hover {
     border-radius: 4px;
-    background-color: lighten(#4aa353, 30);
+    background-color: #4AA353;
+    color: #ECFFA6;
     text-decoration: none;
 } /* This controls the hover state of the links */
 
@@ -119,7 +120,7 @@ ul.slimmenu li .sub-collapser:before {
 } /* This also controls the caret state */
 
 ul.slimmenu li .sub-collapser > i {
-    color: darken(#0195DD, 10);
+    color: #0000FF;
     font-size: 12px;
     display: inline-block;
     vertical-align: middle;
@@ -131,7 +132,7 @@ ul.slimmenu li ul {
     list-style-type: none;
     width: 350px;
 }
-ul.slimmenu li ul li { background-color: lighten(#4aa353, 30); left: -10px; width: 250px; border-radius: 4px; } /* width of dropdown menu */
+ul.slimmenu li ul li { background-color: lighten(#ECFFA6,10); left: -10px; width: 250px; border-radius: 4px; } /* width of dropdown menu */
 ul.slimmenu li > ul {
     display: none;
     position: absolute;

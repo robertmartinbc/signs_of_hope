@@ -2,8 +2,8 @@
 .menu-collapser {
   position: relative;
   border-radius: 4px;
-  background-color: #66ba6f;
-  color: #ECFFA6;
+  background-color: #4AA353;
+  color: #f7ffd9;
   height: 48px;
   line-height: 48px;
   font-size: 20px;
@@ -20,7 +20,7 @@
   right: 6px;
   top: 25px;
   width: 40px;
-  background-color: red;
+  background-color: #0000FF;
   background-repeat: repeat-x;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border-radius: 4px 4px 4px 4px;
@@ -48,14 +48,14 @@
 .collapse-button:hover, .collapse-button:focus {
   background-image: none;
   border-radius: 4px;
-  background-color: #0173aa;
+  background-color: #0000FF;
   color: #0195DD;
 }
 
 /* This controls the hover state of the navbar buttton */
 /* line 52, ../../app/assets/stylesheets/slimmenu.css.scss */
 .collapse-button .icon-bar {
-  background-color: #ECFFA6;
+  background-color: #f7ffd9;
   border-radius: 1px 1px 1px 1px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   display: block;
@@ -80,7 +80,7 @@ ul.slimmenu {
 ul.slimmenu li {
   position: relative;
   display: inline-block;
-  background-color: #ECFFA6;
+  background-color: #f7ffd9;
   margin-bottom: 1px;
 }
 
@@ -104,7 +104,7 @@ ul.slimmenu > li:last-child {
 /* line 81, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li a {
   display: block;
-  color: #0173aa;
+  color: #0000FF;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   font-family: 'Open Sans', sans-serif;
@@ -120,12 +120,13 @@ ul.slimmenu li a {
 /* line 95, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li a:hover {
   border-radius: 4px;
-  background-color: #acdab1;
+  background-color: #4AA353;
+  color: #ECFFA6;
   text-decoration: none;
 }
 
 /* This controls the hover state of the links */
-/* line 101, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 102, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li .sub-collapser {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
   position: absolute;
@@ -139,7 +140,7 @@ ul.slimmenu li .sub-collapser {
 }
 
 /* This controls positioning and sizing of the caret */
-/* line 113, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 114, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li .sub-collapser:before {
   content: '';
   display: inline-block;
@@ -149,9 +150,9 @@ ul.slimmenu li .sub-collapser:before {
 }
 
 /* This also controls the caret state */
-/* line 121, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 122, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li .sub-collapser > i {
-  color: #0173aa;
+  color: #0000FF;
   font-size: 12px;
   display: inline-block;
   vertical-align: middle;
@@ -159,23 +160,23 @@ ul.slimmenu li .sub-collapser > i {
 }
 
 /* This controls the color of the caret */
-/* line 129, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 130, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li ul {
   margin: 0;
   list-style-type: none;
   width: 350px;
 }
 
-/* line 134, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 135, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li ul li {
-  background-color: #acdab1;
+  background-color: #f7ffd9;
   left: -10px;
   width: 250px;
   border-radius: 4px;
 }
 
 /* width of dropdown menu */
-/* line 135, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 136, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li > ul {
   display: none;
   position: absolute;
@@ -186,7 +187,7 @@ ul.slimmenu li > ul {
 }
 
 /* This controls the background color of the sub menu */
-/* line 144, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 145, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu li > ul > li ul {
   display: none;
   position: absolute;
@@ -196,7 +197,7 @@ ul.slimmenu li > ul > li ul {
 }
 
 /* This controls the uo within the sub menu */
-/* line 152, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 153, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu.collapsed li {
   display: block;
   width: 100%;
@@ -205,7 +206,7 @@ ul.slimmenu.collapsed li {
   -webkit-box-sizing: border-box;
 }
 
-/* line 160, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 161, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu.collapsed li a {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
@@ -214,12 +215,12 @@ ul.slimmenu.collapsed li a {
   -webkit-box-sizing: border-box;
 }
 
-/* line 168, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 169, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu.collapsed li .sub-collapser {
   height: 40px;
 }
 
-/* line 171, ../../app/assets/stylesheets/slimmenu.css.scss */
+/* line 172, ../../app/assets/stylesheets/slimmenu.css.scss */
 ul.slimmenu.collapsed li > ul {
   display: none;
   position: static;

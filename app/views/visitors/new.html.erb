@@ -33,24 +33,21 @@
 <div class="program-page-layout">
   <section="layout">
     <%= simple_form_for @visitor, :html => { :class => "simple-form"} do |f| %>
-      <div>
-        <p>Please fill out the form below:</p>
-      </div>
       <div class="simple-form">
-        <%= f.input :name, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Enter Name' %>
+        <%= f.input :name, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Name' %>
       </div>
       <div>
         <div>
-          <%= f.input :email, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Enter Email' %>
+          <%= f.input :email, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Email' %>
         </div>
       <div>
-        <%= f.input :phone, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Enter Telephone No' %>
+        <%= f.input :phone, :input_html => { style: 'width: 280px; '}, label: false, placeholder: 'Telephone No.' %>
       </div>
       <div>
-        <%= f.input :message,as: :text, :input_html => { style: 'height: 80px; width: 280px; '}, label: false, placeholder: 'Enter Enquiry'%>
+        <%= f.input :message,as: :text, :input_html => { style: 'height: 80px; width: 280px; '}, label: false, placeholder: 'Enquiry'%>
       </div>
       <div>
-        <%= f.submit "Submit Enquiry", :class => "create" %>
+        <%= f.submit "Submit", :class => "create" %>
       </div>
       <div>
       <% end %>

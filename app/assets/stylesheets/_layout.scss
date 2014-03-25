@@ -139,6 +139,15 @@ $large               :       75em;
 
 .page-title {
 
+	h3 {
+		color: $hopeBlue;
+		margin: 0px;
+		padding-top: 0px;
+		padding-bottom: 20px;
+
+		behavior: url(/assets/PIE.htc);
+	}
+
 	h1 {
 		margin: 0px;
 		font-size: 18px;
@@ -162,6 +171,15 @@ $large               :       75em;
 .page-title {
 	@include at-breakpoint($medium) {
 		behavior: url(/assets/PIE.htc);
+
+		h3 {
+		color: $hopeBlue;
+		margin: 0px;
+		padding-top: 0px;
+		padding-bottom: 20px;
+
+		behavior: url(/assets/PIE.htc);
+	}
 
 	h1 {
 		font-size: 35px;
@@ -519,17 +537,22 @@ a:link {
 
 	p {
 		@include border-radius(10px);
-			border: 1px solid $hopeGreen;
-			background: lighten($hopeYellow, 10);
-			font-size: 20px;
+			border: 1px solid $hopeBlue;
+			//background: lighten($hopeYellow, 10);
+			font-size: 18px;
 			padding: 10px;
 			margin: 0px;
-			color: $hopeBlue;
+			color: darken($hopeGreen,10);
 			behavior: url(/assets/PIE.htc);
 	}
 }
 
 .race-poster {
+
+	h3 {
+		color: $hopeBlue;
+		behavior: url(/assets/PIE.htc);
+	}
 
 	img {
 		@include border-radius(10px);
@@ -543,10 +566,10 @@ a:link {
 
 	p {
 		@include border-radius(10px);
-			border: 1px solid $hopeGreen;
-			background: lighten($hopeYellow, 10);
-			color: $hopeBlue;
-			font-size: 20px;
+			border: 1px solid $hopeBlue;
+			// background: lighten($hopeYellow, 10);
+			color: darken($hopeGreen,10);
+			font-size: 18px;
 			padding: 10px;
 			margin: 0px;
 			behavior: url(/assets/PIE.htc);
@@ -657,19 +680,21 @@ a:link {
 	@include at-breakpoint($medium) {
 		@include border-radius(10px);
 		behavior: url(/assets/PIE.htc);
+
 	p {
 		margin: 0px;
+		margin-left: auto;
+		margin-right: auto;
 		behavior: url(/assets/PIE.htc);
 	}
 
 	ul {
-		margin: 0px;
 		padding: 0px;
-		margin-left: 50px !important;
 		behavior: url(/assets/PIE.htc);
 	}
 
 	li {
+		width: 30%;
 		display: inline-block !important;
 		padding: 5px;
 		behavior: url(/assets/PIE.htc);
@@ -677,8 +702,8 @@ a:link {
 
 	img {
 		@include border-radius(10px);
-		height: 80px !important;
-		width: 200px !important;
+		height: 100px !important;
+		width: 100% !important;
 		behavior: url(/assets/PIE.htc);
 		}
 	}
@@ -693,7 +718,7 @@ a:link {
 
 	ul {
 		margin: 0px;
-		padding: 0px;
+		padding: 30px;
 		behavior: url(/assets/PIE.htc);
 	}
 
@@ -725,11 +750,11 @@ a:link {
 	ul {
 		margin: 0px;
 		padding: 0px;
-		margin-left: 125px !important;
 		behavior: url(/assets/PIE.htc);
 	}
 
 	li {
+		width: 30%;
 		display: inline-block !important;
 		padding: 10px;
 		behavior: url(/assets/PIE.htc);
@@ -738,7 +763,7 @@ a:link {
 	img {
 		@include border-radius(10px);
 		height: 40px !important;
-		width: 150px !important;
+		width: 100% !important;
 		behavior: url(/assets/PIE.htc);
 		}
 	}
@@ -754,7 +779,7 @@ a:link {
 
 	ul {
 		margin: 0px;
-		padding: 0px;
+		padding: 30px;
 		behavior: url(/assets/PIE.htc);
 	}
 
@@ -809,13 +834,12 @@ a:link {
 	}
 
 	ul {
-		margin: 0px;
 		padding: 0px;
-		margin-left: 125px !important;
 		behavior: url(/assets/PIE.htc);
 	}
 
 	li {
+		width: 20%;
 		display: inline-block !important;
 		padding: 10px;
 		behavior: url(/assets/PIE.htc);
@@ -824,7 +848,7 @@ a:link {
 	img {
 		@include border-radius(10px);
 		height: 40px !important;
-		width: 100px !important;
+		width: 100% !important;
 		behavior: url(/assets/PIE.htc);
 		}
 	}
@@ -839,8 +863,7 @@ a:link {
 	}
 
 	ul {
-		margin: 0px;
-		padding: 0px;
+		padding: 30px;
 		behavior: url(/assets/PIE.htc);
 	}
 
@@ -856,7 +879,6 @@ a:link {
 		@include border-radius(10px);
 		height: 40px;
 		width: 100%;
-		max-width: 250;
 		behavior: url(/assets/PIE.htc);
 	}
 }
@@ -865,7 +887,7 @@ a:link {
 
 	h4 {
 		text-align: center;
-		color: $islandTents;
+		color: $hopeBlue;
 		behavior: url(/assets/PIE.htc);
 	}
 
@@ -878,26 +900,35 @@ a:link {
 .other-sponsors {
 	@include at-breakpoint($medium) {
 		behavior: url(/assets/PIE.htc);
-	margin-left: 250px;
 
-	p {
-		font-size: 18px;
+	table {
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
 		color: $hopeBlue;
-		text-align: left;
-		behavior: url(/assets/PIE.htc);
-		}
+		font-size: 18px !important;
+		padding: 10px;
+
+		td {
+		padding: 20px;
+	}
+	}
 	}
 }
 
 .other-sponsors {
 
-	p {
-		font-size: 18px;
+	table {
+		width: auto;
 		color: $hopeBlue;
-		text-align: left;
-		behavior: url(/assets/PIE.htc);
+		font-size: 10px;
+
+		td {
+		width: auto;
+		padding: 5px;
+			}
+		}
 	}
-}
 
 .how-you-can {
 	margin: 0px;
@@ -911,8 +942,9 @@ a:link {
 
 	p {
 		@include border-radius(10px);
-		background: lighten($hopeYellow, 10);
-		border: 1px solid $hopeGreen;
+		//background: lighten($hopeYellow, 10);
+		border: 1px solid $hopeBlue;
+		color: darken($hopeGreen,10);
 		margin-top: 10px;
 		padding: 20px;
 		margin: 0px;

@@ -286,7 +286,7 @@ a:link {
 	li {
 		@include border-radius(10px);
 			display: block;
-			border: 1px solid $hopeBlue;
+			//border: 1px solid $hopeBlue;
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
 			color: darken($hopeGreen,10);
@@ -302,8 +302,8 @@ a:link {
 
 	h1 {
 		font-size: 24px;
-		text-align: center;
-		margin-top: 20px;
+		//text-align: center;
+		margin-top: 10px;
 		padding: 0px;
 		color: $hopeBlue;
 		behavior: url(/assets/PIE.htc);
@@ -322,10 +322,12 @@ a:link {
 
 	li {
 		@include border-radius(10px);
-			display: block;
-			border: 1px solid $hopeBlue;
-			background: lighten($hopeYellow, 10);
+			width: 30%;
+			display: inline-block;
+			//border: 1px solid $hopeBlue;
+			//background: lighten($hopeYellow, 10);
 			padding: 10px;
+			margin-bottom: 20px;
 			color: darken($hopeGreen,10);
 			font-size: 18px;
 			text-align: justify;

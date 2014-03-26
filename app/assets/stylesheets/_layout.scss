@@ -79,11 +79,19 @@ $large               :       75em;
 	.about-us {
 	@include at-breakpoint($medium) {
 		behavior: url(/assets/PIE.htc);
+		@include border-radius(10px);
+			border: 1px solid $hopeBlue;
+	}
+
+	h3 {
+		color: $hopeBlue;
+		padding-left: 20px;
+		padding-top: 20px;
+		margin: 0px;
 	}
 
 	p {
-		@include border-radius(10px);
-		border: 1px solid $hopeBlue;
+		//border: 1px solid $hopeBlue;
 		font-size: 18px;
 		color: darken($hopeGreen,10);
 		padding: 20px;
@@ -378,15 +386,15 @@ a:link {
 
 .biography {
 	@include border-radius(10px);
-	border: 1px solid $hopeGreen;
+	border: 1px solid $hopeBlue;
 	margin-bottom: 20px;
 	behavior: url(/assets/PIE.htc);
 
 	h3 {
 		@include border-radius(10px);
-		color: $hopeGreen;
+		color: $hopeBlue;
 		margin: 0px;
-		background: lighten($hopeYellow, 10);
+		//background: lighten($hopeYellow, 10);
 		padding: 10px;
 		behavior: url(/assets/PIE.htc);
 
@@ -397,7 +405,8 @@ a:link {
 			background: lighten($hopeYellow, 10);
 			padding: 10px;
 			margin: 0px;
-			color: $hopeBlue;
+			color: $hopeGreen;
+			font-size: 18px;
 			behavior: url(/assets/PIE.htc);
 	}
 }
@@ -731,9 +740,14 @@ a:link {
 		behavior: url(/assets/PIE.htc);
 	}
 
+	h2 {
+		color: $hopeBlue;
+	}
+
 	ul {
 		margin: 0px;
-		padding: 30px;
+		padding-left: 30px;
+		padding-rigth: 30px;
 		behavior: url(/assets/PIE.htc);
 	}
 
@@ -792,16 +806,21 @@ a:link {
 		behavior: url(/assets/PIE.htc);
 	}
 
+	h2 {
+		color: $hopeBlue;
+	}
+
 	ul {
 		margin: 0px;
-		padding: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 		behavior: url(/assets/PIE.htc);
 	}
 
 	li {
 		display: block;
 		margin: 0px;
-		padding-top: 20px;
+		padding-top: 10px;
 		behavior: url(/assets/PIE.htc);
 
 	}
@@ -871,21 +890,25 @@ a:link {
 
 .bronze-sponsors {
 
-	padding-bottom: 20px;
 	p {
 		margin: 0px;
 		behavior: url(/assets/PIE.htc);
 	}
 
+	h2 {
+		color: $hopeBlue;
+	}
+
 	ul {
-		padding: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 		behavior: url(/assets/PIE.htc);
 	}
 
 	li {
 		display: block;
 		margin: 0px;
-		padding-top: 20px;
+		padding-top: 10px;
 		behavior: url(/assets/PIE.htc);
 
 	}
@@ -922,12 +945,12 @@ a:link {
 		width: auto;
 		color: $hopeBlue;
 		font-size: 18px !important;
-		padding: 10px;
+		}
 
 		td {
-		padding: 20px;
-	}
-	}
+		width: auto;
+		padding: 20px !important;
+			}
 	}
 }
 
@@ -936,7 +959,7 @@ a:link {
 	table {
 		width: auto;
 		color: $hopeBlue;
-		font-size: 10px;
+		font-size: 12px;
 
 		td {
 		width: auto;
@@ -958,6 +981,7 @@ a:link {
 	p {
 		@include border-radius(10px);
 		//background: lighten($hopeYellow, 10);
+		font-size: 18px;
 		border: 1px solid $hopeBlue;
 		color: darken($hopeGreen,10);
 		margin-top: 10px;
